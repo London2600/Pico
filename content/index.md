@@ -1,108 +1,17 @@
 /*
-Title: Welcome
-Description: This description will go in the meta description tag
+Title: London 2600
+Description: London 2600 meet on the first Friday of every month, initially from 6.30pm to 7.30pm at the front entrance to the Trocadero, near Piccadilly Circus
+Template: home
 */
 
-## Welcome to Pico
+London 2600 meetings are similar to those held by [2600 groups around the world](http://www.2600.org/meetings/), and the other 2600 groups in the United Kingdom.
 
-Congratulations, you have successfully installed [Pico](http://picocms.org/). Pico is a stupidly simple, blazing fast, flat file CMS.
+Everybody who is interested in computer and telecoms security and the impact of technology on society is welcome, from both sides of the fence, no matter what your age or level of skill and experience - nobody knows it all, no matter what they claim. You could learn more at these free meetings than from months of study or investigation on your own, but this depends on what you are willing to share and contribute in return. We are mostly British and therefore somewhat shy in public, but it is easy to strike up a conversation with most of us.
 
-### Creating Content
+- First Friday of every month
+- Start at 6:30 at the Trocadero front entrance, on Coventry Street, just off Piccadilly Circus
+- Move on elsewhere at 7:30
 
-Pico is a flat file CMS, this means there is no administration backend and database to deal with. You simply create `.md` files in the "content"
-folder and that becomes a page. For example, this file is called `index.md` and is shown as the main landing page. 
+Over the years London 2600 has played host to:
 
-If you create a folder within the content folder (e.g. `content/sub`) and put an `index.md` inside it, you can access that folder at the URL 
-`http://yousite.com/sub`. If you want another page within the sub folder, simply create a text file with the corresponding name (e.g. `content/sub/page.md`)
-and you will be able to access it from the URL `http://yousite.com/sub/page`. Below we've shown some examples of content locations and their corresponing URL's:
-
-<table>
-	<thead>
-		<tr><th>Physical Location</th><th>URL</th></tr>
-	</thead>
-	<tbody>
-		<tr><td>content/index.md</td><td>/</td></tr>
-		<tr><td>content/sub.md</td><td>/sub</td></tr>
-		<tr><td>content/sub/index.md</td><td>/sub (same as above)</td></tr>
-		<tr><td>content/sub/page.md</td><td>/sub/page</td></tr>
-		<tr><td>content/a/very/long/url.md</td><td>/a/very/long/url</td></tr>
-	</tbody>
-</table>
-
-If a file cannot be found, the file `content/404.md` will be shown.
-
-### Text File Markup
-
-Text files are marked up using [Markdown](http://daringfireball.net/projects/markdown/syntax). They can also contain regular HTML.
-
-At the top of text files you can place a block comment and specify certain attributes of the page. For example:
-
-	/*
-	Title: Welcome
-	Description: This description will go in the meta description tag
-	Author: Joe Bloggs
-	Date: 2013/01/01
-	Robots: noindex,nofollow
-	*/
-
-These values will be contained in the `{{ meta }}` variable in themes (see below).
-
-There are also certain variables that you can use in your text files:
-
-* <code>&#37;base_url&#37;</code> - The URL to your Pico site
-
-### Themes
-
-You can create themes for your Pico installation in the "themes" folder. Check out the default theme for an example of a theme. Pico uses
-[Twig](http://twig.sensiolabs.org/documentation) for it's templating engine. You can select your theme by setting the `$config['theme']` variable
-in config.php to your theme folder.
-
-All themes must include an `index.html` file to define the HTML structure of the theme. Below are the Twig variables that are available to use in your theme:
-
-* `{{ config }}` - Conatins the values you set in config.php (e.g. `{{ config.theme }}` = "default")
-* `{{ base_dir }}` - The path to your Pico root directory
-* `{{ base_url }}` - The URL to your Pico site
-* `{{ theme_dir }}` - The path to the Pico active theme directory
-* `{{ theme_url }}` - The URL to the Pico active theme directory
-* `{{ site_title }}` - Shortcut to the site title (defined in config.php)
-* `{{ meta }}` - Contains the meta values from the current page
-	* `{{ meta.title }}`
-	* `{{ meta.description }}`
-	* `{{ meta.author }}`
-	* `{{ meta.date }}`
-	* `{{ meta.date_formatted }}`
-	* `{{ meta.robots }}`
-* `{{ content }}` - The content of the current page (after it has been processed through Markdown)
-* `{{ pages }}` - A collection of all the content in your site
-	* `{{ page.title }}`
-	* `{{ page.url }}`
-	* `{{ page.author }}`
-	* `{{ page.date }}`
-	* `{{ page.date_formatted }}`
-	* `{{ page.content }}`
-	* `{{ page.excerpt }}`
-* `{{ prev_page }}` - A page object of the previous page (relative to current_page)
-* `{{ current_page }}` - A page object of the current_page
-* `{{ next_page }}` - A page object of the next page (relative to current_page)
-* `{{ is_front_page }}` - A boolean flag for the front page
-
-Pages can be used like:
-
-<pre>&lt;ul class=&quot;nav&quot;&gt;
-	{% for page in pages %}
-	&lt;li&gt;&lt;a href=&quot;{{ page.url }}&quot;&gt;{{ page.title }}&lt;/a&gt;&lt;/li&gt;
-	{% endfor %}
-&lt;/ul&gt;</pre>
-
-### Plugins
-
-See [http://pico.dev7studios.com/plugins](http://picocms.org/plugins)
-
-### Config
-
-You can override the default Pico settings (and add your own custom settings) by editing config.php in the root Pico directory. The config.php file
-lists all of the settings and their defaults. To override a setting, simply uncomment it in config.php and set your custom value.
-
-### Documentation
-
-For more help have a look at the Pico documentation at [http://picocms.org/docs](http://picocms.org/docs)
+*computer hackers, phone phreakers, cyberpunks, performance artists, systems administrators, cybergoths, military intelligence officers, mobi chippers, skip trashers, hacktivists, network gurus, anti-virus programmers, penetration testers, multimedia artists, internet entrepreneurs, newbies, cybercriminals, warez d00dz, old skool, movie script writers, 31337, civil liberties activists, lawyers, radio hams, students, cool hunters, wannabes, djs, corporate security professionals, academic researchers, privacy campaigners, journalists*
