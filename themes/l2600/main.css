@@ -29,6 +29,7 @@ header pre
 {
     margin: 0;
     padding-bottom: 1em;
+    font-weight: bold;
 }
 
 header a, header a:hover
