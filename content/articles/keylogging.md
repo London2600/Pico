@@ -1,6 +1,6 @@
 /*
 Title: Win32 Keylogging for The Common People
-Description: Writing a Win32 keylogger in several simple steps. I don't know how many. I didn't could then. Shut up, I'm lazy.
+Description: Writing a Win32 keylogger in several simple steps. I don't know how many. I didn't count them. Shut up, I'm lazy.
 Author: tracer
 Date: 2015/05/10
 */
@@ -94,7 +94,7 @@ Additionally we have two global variables - keyboardLayout and dump. Both of the
 
 ## Next steps
 
-Welp, now we're logging all of the keypressed that happen on our target machine. Which is great. It's *great*. But it's not that useful. Our output file is just a jumble of characters, with no way of knowing which ones are relevant and which are just the cat walking on the keyboard.
+Welp, now we're logging all of the keypresses that happen on our target machine. Which is great. It's *great*. But it's not that useful. Our output file is just a jumble of characters, with no way of knowing which ones are relevant and which are just the cat walking on the keyboard.
 
 So the next change we're going to make to the system is to add some more structure to our dump file. The first change is basic, but important: we're going to keep track of the current window title. This means we can do a search in the output file for keywords like "login" or "mail", and have a better chance of finding something worth stealing. **Borrowing**. I meant borrowing. 
 
