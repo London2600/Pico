@@ -7,17 +7,17 @@ Date: 2015/05/10
 
 Man, I bet making a key-logger is hard. It probably involves assembler and Win32 API witchcraft and sacrificing chickens and shit. Special candles made from rendered baby-fat and arranged in arcane geometries.
 
-Nope. Turns out the Win32 API gives you a load of functions to do this out of the box.
+Nope. Turns out the Win32 API gives you a load of functions to do this out of the box. This is going to be a quick overview of what you can do with what you're given and to go into some of the idiosyncrasies of the API. If you've done any Win32 stuff before there shouldn't be many surprises. If you want more detail then please check out the full implementation on [Github](https://github.com/tracer-sec/shoulder_surfer).
 
 ## SetWindowsHookEx
 
-The [SetWindowsHookEx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644990%28v=vs.85%29.aspx) function allows us to specify a callback function on common system events. There are several you can snag, but we're interested in WH_KEYBOARD_LL - Low-level keyboard events. If we set up a hook for WH_KEYBOARD_LL events then our callback will get hit every time a key event happens. For greater details see the MSDN page for [LowLevelKeyboardProc](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644985%28v=vs.85%29.aspx).
+Windows' hooking API, and in particular [SetWindowsHookEx](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644990%28v=vs.85%29.aspx), allows us to specify a callback function which is called on certain system events. There are several you can snag, but we're interested in WH_KEYBOARD_LL - Low-level keyboard events. Once we've set up a hook for WH_KEYBOARD_LL events our callback will get hit every time a key event happens. For greater details see the MSDN page for [LowLevelKeyboardProc](https://msdn.microsoft.com/en-us/library/windows/desktop/ms644985%28v=vs.85%29.aspx).
 
-As stated in tbe documentation, We also need a message pump for this to work, but we don't want the hassle of window. And that's fine - we can create our message pump manually. This means we'll still be a fully functioning Win32 application, but you'll have to look at the task manager or similar tool to see that our process is actually running. A handy fringe benefit.
+As stated in the documentation we also need a message pump for this to work, but we don't want the hassle of a window. And that's fine - we can create our message pump manually. This means we'll still be a fully-functioning Win32 application, but you'll have to look at the task manager or similar tool to see that our process is actually running. A handy fringe benefit.
 
 With that in mind, here's the guts of the operation.
 
-```cpp
+~~~~~~
 LRESULT CALLBACK KeyboardHook(int code, WPARAM wParam, LPARAM lParam)
 {
     // DO MAGICAL THINGS HERE
@@ -48,13 +48,13 @@ int WINAPI WinMain(
 
     return 0;
 }
-```
+~~~~~~
 
 ## Making it do something
 
-So now we're getting our function called every time a key is pressed. Happy days. But our callback doesn't do anything yet. Let's take that keypress and put it into a file or, uh, safe keeping. Our callback now looks like this:
+So now we're getting our function called every time a key is pressed. Happy days. But our callback doesn't do anything yet. Let's take that keypress and put it into a file for, uh, safe keeping. Our callback now looks like this:
 
-```cpp
+~~~~~~
 wofstream dump;
 HKL keyboardLayout;
 
@@ -86,11 +86,11 @@ LRESULT CALLBACK KeyboardHook(int code, WPARAM wParam, LPARAM lParam)
 
     return ::CallNextHookEx(nullptr, code, wParam, lParam);
 }
-```
+~~~~~~
 
 You'll notice we've got another function (GetActualKeyboardState) to get the current state of the keyboard. We can't use the usual Win32 function GetKeyboardState here - it simply doesn't work. I suspect it's using GetAsyncKeyState internally, because that doesn't work inside low-level keyboard hooks since the hook is fired before the async keyboard state is updated. I promise I'm not making this complicated just for the fun of it.
 
-Additionally we have two global variables - keyboardLayout and dump. Both of these are set up in our WinMain function. I've not gone into the details of either, but it's not really needed. Either check the source code in the Github link at the end of this article, or just look it up. It's pretty straight-forward and there's no real mystery there.
+Additionally we have two global variables - keyboardLayout and dump. Both of these are set up in our WinMain function. I've not gone into the details of either, but dump is our output stream and keyboardLayout is for getting the current locale to help convert scan codes into actual keyboard input. It's pretty straight-forward and there's no real mystery there.
 
 ## Next steps
 
@@ -100,7 +100,7 @@ So the next change we're going to make to the system is to add some more structu
 
 Here's our updated callback.
 
-```cpp
+~~~~~~
 LRESULT CALLBACK KeyboardHook(int code, WPARAM wParam, LPARAM lParam)
 {
     static wstring currentTitle;
@@ -137,9 +137,9 @@ LRESULT CALLBACK KeyboardHook(int code, WPARAM wParam, LPARAM lParam)
 
     return ::CallNextHookEx(nullptr, code, wParam, lParam);
 }
-```
+~~~~~~
 
-It's still fairly uncomplicated, but that's the idea. There are a few things can still thwart you. The big one is form autocompletion. But it's cool. We've got a plan B . . . *in the next episode*. The next is that windows running in an admin context won't be passed to our hook is it's running in user mode, which is likely is. Just stuff to bear in mind.
+It's still fairly uncomplicated, but that's the idea. There are a few things can still thwart you. The big one is form autocompletion. But it's cool. We've got a plan B . . . *in a future episode*. The next is that windows running in an admin context won't pass their keyboard events to our hook if it's running in user mode, which it likely is. Just stuff to bear in mind.
 
 ## Wrap it up, nerd. I have things to do
 
