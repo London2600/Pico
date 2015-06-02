@@ -6,6 +6,7 @@
 <meta name="description" content="London 2600 meet on the first Friday of every month, initially from 6.30pm to 7.30pm at the front entrance to the Trocadero, near Piccadilly Circus">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600">
 <link rel="stylesheet" href="{{ theme_url }}/main.css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 </head>
 <body>
 <header>
@@ -24,8 +25,9 @@
     {{ content }}
     <h2>News</h2>
     <ul class="news">
+    {% set limit = 3 %}
     {% for page in pages %}
-        {% if page.url starts with '/news/' %}
+        {% if page.url starts with '/news/' and limit > 0 %}
     <li>
         <h4><a href="{{ page.url }}">{{ page.title }}</a></h4>
         <p class="meta">Posted by <strong>{{ page.author }}</strong> on <em>{{ page.date_formatted }}</em></p>
@@ -33,9 +35,30 @@
         {{ page.excerpt }}
         </p>
     </li>
+            {% set limit = limit - 1 %}
         {% endif %}
     {% endfor %}
     </ul>
+    <div class="col">
+        <h2>Upcoming Events</h2>
+        <div id="events"></div>
+        <br class="clear">
+    </div>
+    <div class="col">
+        <h2>Recent Articles</h2>
+        <ul id="articles">
+    {% set limit = 5 %}
+    {% for page in pages %}
+        {% if page.url starts with '/articles/' and limit > 0 %}
+    <li>
+        <a href="{{ page.url }}">{{ page.title }}</a> by <em>{{ page.author }}</em>
+    </li>
+            {% set limit = limit - 1 %}
+        {% endif %}
+    {% endfor %}
+        </ul>
+    </div>
+    <br>
 </div></div>
 <footer><div>
     <div>
@@ -63,5 +86,6 @@
         </p>
     </div>
 </div></footer>
+<script src="/content/scripts/site.js"></script>
 </body>
 </html>

@@ -120,6 +120,42 @@ ul.news
     padding: 0.5em;
 }
 
+#container br.clear
+{
+    clear: both;
+    display: block;
+}
 
+#container > div > br
+{
+    clear: both;
+}
 
+#container div.col h2
+{
+    margin-top: 0.5em;
+}
+
+#container div.col
+{
+    width: 48%;
+    border-right: 1px solid #affaa1; 
+    float: left;
+    margin: 1em 0 1em 0;
+    padding-right: 1em;
+}
+
+#container div.col + div.col
+{
+    border-right: 0;
+    padding-right: 0;
+    padding-left: 1em;
+}
+
+#events ul, #articles
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
