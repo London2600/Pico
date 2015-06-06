@@ -2,7 +2,7 @@
     "events": [
         {
             "name": "OpenTech 2015",
-            "start_date": "2015-06-15",
+            "start_date": "2015-06-13",
             "location": "London",
             "url": "http://www.opentech.org.uk/2015/"
         },
