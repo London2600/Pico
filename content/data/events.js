@@ -32,6 +32,13 @@
             "start_date": "2015-08-25",
             "location": "Manchester",
             "url": "http://www.bsidesmcr.org.uk/"
+        },
+        {
+            "name": "Interop London",
+            "start_date": "2015-06-16",
+            "end_date": "2015-06-18",
+            "location": "London",
+            "url": "http://www.interop.co.uk"
         }
     ]
 }
