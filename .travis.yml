@@ -6,10 +6,12 @@ before_script:
 - uptime
 install:
   - uptime 
+script: 
+- uptime
 after_script:
 - uptime
-notifications:
-  irc: irc.2600.london#2600
+#notifications:
+#  irc: irc.2600.london#2600
 env:
   global:
   - secure: wzcbYp378w5YkGvD92gcErw4K1wGjJQLq/RBMSaH1ZibzU0Ri5PlVTpXa2iFhge2zDNHbKzrD/+v1qnCKV5qNSqHKbWn2CzT5M3RZShONzuyr9OEVuK78KKPSAkWPFnSxjVIjcpp+Ul9CwRGY/DgvowTaYAdx2FQv5z1x1Am/f1vYo9uKdOM4qv1l2V/n+CDGq1avZ+116qt/EtARKwlf6SIykIpbVWW0PTmwD6rGGwJbO237r38jkwjjAV7MNbCtYk/1URR60UP5KO4nGehuoJ64xAtk8Eyhyuhkch8sBQt1p1BXtyUyzepUIllEi5nNRw5aln4Blz5Nn/xEsKzC153nZ0wMU0cgY7pVD3JR+eh+FiyxTI1RXoEAcafYIE6R2OJXGQVikYLYuqY0MLTnlu6ejCBObjXME4FLf5USK3NuWHIML3ClE8zeZ10ktWAbVO3c5kHgCtbJ0d+Dr53BdoYgkyKLFI/ufxm9645aouQm43s9E8d+Hl9CQ1r8azUkjHIBKHTkkC0CBxVCqqtV736DF2ANPVnwP37ywyyiFFtPSOmrMZxytxIPCrz6FAfrE5RJqioES9DEHl/ddL83f3hp+CBlqg6s3iS2mME1sePY/XJYvrsyw08JtSecEvJPyAX7CXoLbA0qVwEr4tS+dRyl+tBNkwDqCtyuhFmWnI=
