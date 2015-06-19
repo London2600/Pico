@@ -17,3 +17,4 @@ $config['excerpt_length'] = 50;             // The pages excerpt length (in word
 
 // To add a custom config setting:
 
+$config['disqus_id'] = 'london2600';        // Disqus Plugin
