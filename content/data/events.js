@@ -39,6 +39,19 @@
             "end_date": "2015-06-18",
             "location": "London",
             "url": "http://www.interop.co.uk"
+        },
+        {
+            "name": "Chaos Communication Camp",
+            "start_date": "2015-08-13",
+            "end_date": "2015-08-17",
+            "location": "Germany",
+            "url": "http://events.ccc.de/camp/2015/wiki/Main_Page"
+        },
+        {
+            "name": "Intel Diversity Meetup",
+            "start_date": "2015-07-14",
+            "location": "London",
+            "url": "http://www.meetup.com/Intel-Diversity/events/223254462/"
         }
     ]
 }
