@@ -11,7 +11,7 @@ after_script:
   - uptime
 after_success:
   - sudo apt-get -y install sshpass
-  - sshpass -p $DEPLOY_PASS ssh $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_CODE
+  - sshpass -p $DEPLOY_PASS ssh -o StrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_CODE
 #notifications:
 #  irc: irc.2600.london#2600
 env:
