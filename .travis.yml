@@ -13,8 +13,8 @@ after_success:
 - echo -e "Host *\n\tLogLevel ERROR\n\tstricthostkeychecking no" >> ~/.ssh/config
 - sshpass -p "$DEPLOY_PASS" ssh "$DEPLOY_USER"@"$DEPLOY_HOST" "cd public_html/ &&
   git reset --hard && git pull"
-#notifications:
-#  irc: irc.2600.london#2600
+notifications:
+  irc: irc.2600.london#2600
 env:
   global:
   - secure: HUpqXo5qQ/IwJeHBFF5GUSopt9VyLU3LgtX20X+C6AaSo7VAEwEddLcPMfkddrPibOF0uyOgERMCqootZyMzMubvzu5lL6lv91bSyjFMh6kk3/u3MeEvWlO+S9ZYigl54oC0XLwgPlyTYoB44Y4DetqZc01pDEOkmrDw9SnRQKaGcukOnoiP/AUvIM4jXCzysX/wKILUujNbh5ZocZy3tCp3TDlECVk1oQmuE0opNe3+13BxeQ1X5LtqYYkoMuaIxcEjB5DPXhS0+wdBkcYxgLCre8kDZgppt23P1pdWL2x+SrpT5PXR7rkjKE5uZd3L+RXt6qEuDriqbyvr98Rd+Pck5VsTiGyXNGs7Nl2GiAulKu33eBnnCpGgB3aYsCdsN2EXWj5Z/X1flAYtAhZS3geGJ4v1kxer4iIYp9l/F63+PbgHzk5miVbrXirF9Hsb4G9gEeM7rsSc1xqJ+PvzzQD9tzdQxi+jj/esmWB+HV2i0+0Gb8mLecP0tGaZCC6lL4SYFM6Zjy4e9jPEMCuJFjDlIz2HylDrMVzP63WJLEjgcGiZxEi4IJJfLyxCxu5KpHRMyu9D1QucPo8ZJZV5mjCRNt0wgtMZs+KhvNepb326+bZtA8wh/mfR+YWz38pbClsPRa8nqLeppFD511Ua0DJCW6vcPUBVRb6eztZkNAU=
