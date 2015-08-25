@@ -52,6 +52,31 @@
             "start_date": "2015-07-14",
             "location": "London",
             "url": "http://www.meetup.com/Intel-Diversity/events/223254462/"
+        },
+        {
+            "name": "Race to secure SSL",
+            "start_date": "2015-09-17",
+            "location": "London",
+            "url": "https://info.a10networks.com/EMEA_2015_Q3_Event_UK_Karting_Setp17_RegPage.html"
+        },
+        {
+            "name": "Hackers film showing with Q&amp;A",
+            "start_date": "2015-09-20",
+            "location": "London",
+            "url": "http://www.princecharlescinema.com/events/events.php?seasonanchor=hackers"
+        },
+        {
+            "name": "IP Expo: Cyber Security",
+            "start_date": "2015-10-07",
+            "end_date": "2015-10-08",
+            "location": "London",
+            "url": "http://www.ipexpoeurope.com/Cyber-Security"
+        },
+        {
+            "name": "The Future of Gaming: AR &amp; VR Edition",
+            "start_date": "2015-09-16",
+            "location": "London",
+            "url": "https://www.eventbrite.co.uk/e/the-future-of-gaming-ar-vr-edition-tickets-17880440880?aff=newsletter2408"
         }
     ]
 }
