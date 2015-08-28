@@ -5,7 +5,7 @@ Author: tracer
 Date: 2015/08/27
 */
 
-I have no idea where this CTF came from. It sells itself as an OWASP CTF, and possible for Latam Tour 2015. But it's not the [Latam Tour CTF](https://www.owasp.org/index.php/LatamTour2015#tab=CTF) mentioned on the OWASP site, which was South America anyway, while this one appears to be [Dutch](http://www.securityskills.nl/).
+I have no idea where this CTF came from. It sells itself as an OWASP CTF, and possible for Latam Tour 2015. But it's not the [Latam Tour CTF](https://www.owasp.org/index.php/LatamTour2015#tab=CTF) mentioned on the OWASP site, which is based in South America, while this one appears to be [Dutch](http://www.securityskills.nl/).
 
 [Whatever, here it is!](https://ctf-ddn.rhcloud.com/)
 
@@ -22,7 +22,7 @@ SQL injection is pretty vanilla, so let's assume that's what we're starting with
 
 [https://ctf-ddn.rhcloud.com/challenges/web/01/lines.php?catId=Classic%20Cars&showquery=0](https://ctf-ddn.rhcloud.com/challenges/web/01/lines.php?catId=Classic%20Cars&showquery=0)
 
-Notice we've got a *showquery* key on the querystring. Setting that to 1 will dump the query we've made back into the page. With that in mind, let's start throwing quotes around.
+Notice we've got a *showquery* key on the querystring. Setting that to 1 will dump the SQL query we've just made back into the page. With that in mind, let's start throwing quotes around.
 
 [https://ctf-ddn.rhcloud.com/challenges/web/01/lines.php?catId=Classic%20Cars%27%20UNION%20select%201;--&showquery=1](https://ctf-ddn.rhcloud.com/challenges/web/01/lines.php?catId=Classic%20Cars%27%20UNION%20select%201;--&showquery=1)
 
@@ -30,7 +30,7 @@ Yep, sure enough we can inject stuff. But it's not returning anything. This is p
 
 [https://ctf-ddn.rhcloud.com/challenges/web/01/lines.php?catId=Classic%20Cars%27%20ORDER%20BY%209;%23&showquery=1](https://ctf-ddn.rhcloud.com/challenges/web/01/lines.php?catId=Classic%20Cars%27%20ORDER%20BY%209;%23&showquery=1)
 
-ORDER BY 10 is the first one to error, so it looks like we have 9 columns. Also, using -- to comment out the rest of the query doesn't work with ORDER BY. We need to use # instead. I have no idea why. Anyway, now we have our number of columns in the result, we can start playing. I'll switch to just showing the contents of the 'catId' key now, since the rest of the URL is not relevant.
+ORDER BY 10 is the first one to error, so it looks like we have 9 columns. Also, using -- to comment out the rest of the query doesn't work with ORDER BY. We need to use # instead. I have no idea why. Anyway, now we have our number of columns in the result we can start playing. I'll switch to just showing the contents of the 'catId' key now, since the rest of the URL is not relevant.
 
 ~~~~~~
 Classic Cars' union select '1', '2', '3', '4', '5', '6', '7', '8', '9';%23
@@ -39,11 +39,11 @@ Classic Cars' union select '1', '2', '3', '4', '5', '6', '7', '8', '9';%23
 Cool, that adds another row to the end of our table and shows us that the columns we need to fill are the second and sixth. Now let's query the *information_schema* tables and see what else is in this database.
 
 ~~~~~~
-Classic Cars' union SELECT table_schema, table_name, null, null, null, null, null, null, null 
+Classic Cars' union SELECT null, table_name, null, null, null, null, null, null, null 
 FROM information_schema.tables WHERE table_schema != 'mysql' AND table_schema != 'information_schema';%23
 ~~~~~~
 
-This dumps a list of tables names, and from the look of it the table we want is probably employees. Lets make some guesses about column names.
+This dumps a list of tables names, and it looks like the table we want is probably 'employees'. Lets make some guesses about column names.
 
 ~~~~~~
 Classic Cars' union select null,email,null,null,null,password,null,null,null from employees;%23
@@ -133,7 +133,7 @@ And the next part says:
 
 > "And you checked the source code?" in Spanish.
 
-Sure enough if you look in the source you'll see a commented out section which repeats the user agent of the request (the string which identifies different kinds of browser) back into the page. So if we tweak our user agent we should be able to inject Javascript. The easiest way to do that if you use Firefox is a user agent switcher addon, such as [this one](http://chrispederick.com/work/user-agent-switcher/).
+Sure enough if you look in the page source you'll see a commented out section which repeats the user agent of the request (the string which identifies different kinds of browser) back into the page. So if we tweak our user agent we should be able to inject Javascript. The easiest way to do that if you use Firefox is a user agent switcher addon, such as [this one](http://chrispederick.com/work/user-agent-switcher/).
 
 Our first task is going to be to break out of the comment. If we set our user agent to:
 
@@ -196,7 +196,6 @@ CORS, huh? Well let's try sending a [CORS preflight](https://en.wikipedia.org/wi
 
 ~~~~~~
 OPTIONS https://ctf-ddn.rhcloud.com/challenges/web/05/ HTTP/1.1
-User-Agent: Fiddler
 Host: ctf-ddn.rhcloud.com
 Origin: http://www.owasp.org
 ~~~~~~
@@ -215,7 +214,7 @@ K.
 
 > "Injection flaws are often found in SQL, LDAP, Xpath, or NoSQL queries; OS commands; XML parsers, SMTP Headers, program arguments, etc"
 
-I took a scenic route to get this one. I was running various posts through Fiddler when I realised that the GETs were returning more bytes than the POSTs, even though the POSTs displayed more text. A quick look shows that the GETs have a chunk of Javacript included which dumps something to console.log. I reloaded the page in a browser, checked the console in Firebug and see the message:
+I took a scenic route to get this one. I was running various requests through Fiddler when I realised that the GETs were returning more bytes than the POSTs, even though the POSTs displayed more text. A quick look shows that the GETs have a chunk of Javacript included which dumps something to console.log. I reloaded the page in a browser, checked the console in Firebug and see the message:
 
 ~~~~~~
 The file passwords/accounts.txt is full
