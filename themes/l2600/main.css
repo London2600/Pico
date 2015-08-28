@@ -19,6 +19,20 @@ a:hover
     color: #000;
 }
 
+blockquote
+{
+    font-style: italic;
+}
+
+hr
+{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #affaa1;
+    margin: 1.5em 0;
+}
+
 header
 {
     text-align: center;
