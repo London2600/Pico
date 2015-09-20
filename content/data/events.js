@@ -77,6 +77,12 @@
             "start_date": "2015-09-16",
             "location": "London",
             "url": "https://www.eventbrite.co.uk/e/the-future-of-gaming-ar-vr-edition-tickets-17880440880?aff=newsletter2408"
+        },
+        {
+            "name": "TECHtoberfest",
+            "start_date": "2015-10-02",
+            "location": "London",
+            "url": "http://techtoberfest.co.uk/"
         }
     ]
 }
