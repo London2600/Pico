@@ -83,6 +83,12 @@
             "start_date": "2015-10-02",
             "location": "London",
             "url": "http://techtoberfest.co.uk/"
+        },
+        {
+            "name": "Misco Expo 2015",
+            "start_date": "2015-10-23",
+            "location": "London",
+            "url": "http://www.misco.co.uk/expo"
         }
     ]
 }
