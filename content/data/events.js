@@ -89,6 +89,40 @@
             "start_date": "2015-10-23",
             "location": "London",
             "url": "http://www.misco.co.uk/expo"
+        },
+        {
+            "name": "CryptoParty London",
+            "start_date": "2015-12-03",
+            "location": "London",
+            "url": "https://www.cryptoparty.in/london"
+        },
+        {
+            "name": "EAG Amusement &amp; Leisure Show",
+            "start_date": "2016-01-12",
+            "end_date": "2016-01-14",
+            "location": "London",
+            "url": "http://www.eagexpo.com/"
+        },
+        {
+            "name": "BETT Show 2016",
+            "start_date": "2016-01-20",
+            "end_date": "2016-01-23",
+            "location": "London",
+            "url": "http://www.bettshow.com/"
+        },
+        {
+            "name": "EMF Camp",
+            "start_date": "2016-08-05",
+            "end_date": "2016-08-07",
+            "location": "Guildford",
+            "url": "https://www.emfcamp.org/"
+        },
+        {
+            "name": "HOPE XI",
+            "start_date": "2016-07-22",
+            "end_date": "2016-07-24",
+            "location": "New York",
+            "url": "http://www.hope.net/"
         }
     ]
 }
