@@ -123,6 +123,13 @@
             "end_date": "2016-07-24",
             "location": "New York",
             "url": "http://www.hope.net/"
+        },
+        {
+            "name": "ICE Totally Gaming",
+            "start_date": "2016-02-02",
+            "end_date": "2016-02-04",
+            "location": "London",
+            "url": "http://www.icetotallygaming.com"
         }
     ]
 }
