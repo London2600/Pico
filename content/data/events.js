@@ -130,6 +130,47 @@
             "end_date": "2016-02-04",
             "location": "London",
             "url": "http://www.icetotallygaming.com"
+        },
+        {
+            "name": "Cafe Culture",
+            "start_date": "2016-05-10",
+            "end_date": "2016-05-11",
+            "location": "London",
+            "url": "http://www.caffecultureshow.com/"
+        },
+        {
+            "name": "InfoSec Europe",
+            "start_date": "2016-06-07",
+            "end_date": "2016-06-09",
+            "location": "London",
+            "url": "http://www.infosecurityeurope.com/"
+        },
+        {
+            "name": "BSides London",
+            "start_date": "2016-06-08",
+            "location": "London",
+            "url": "https://www.securitybsides.org.uk/"
+        },
+        {
+            "name": "IP Expo",
+            "start_date": "2016-10-05",
+            "end_date": "2016-10-06",
+            "location": "London",
+            "url": "http://www.ipexpoeurope.com/"
+        },
+        {
+            "name": "Commercial UAV Show",
+            "start_date": "2016-10-19",
+            "end_date": "2016-10-20",
+            "location": "London",
+            "url": "http://www.terrapinn.com/exhibition/the-commercial-uav-show/index.stm19th"
+        },
+        {
+            "name": "Apps World",
+            "start_date": "2016-10-20",
+            "location": "London",
+            "url": "http://world.apps-world.net/"
         }
     ]
 }
+
