@@ -170,6 +170,12 @@
             "start_date": "2016-10-20",
             "location": "London",
             "url": "http://world.apps-world.net/"
+        },
+        {
+            "name": "Coding Hour: node.js",
+            "start_date": "2016-03-08",
+            "location": "London",
+            "url": "http://codinghour.bemyapp.com/"
         }
     ]
 }
