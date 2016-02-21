@@ -176,6 +176,13 @@
             "start_date": "2016-03-08",
             "location": "London",
             "url": "http://codinghour.bemyapp.com/"
+        },
+        {
+            "name": "Unified Communications Expo",
+            "start_date": "2016-04-19",
+            "end_date": "2016-04-20",
+            "location": "London",
+            "url": "http://www.ucexpo.co.uk"
         }
     ]
 }
