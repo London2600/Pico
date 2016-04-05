@@ -183,6 +183,13 @@
             "end_date": "2016-04-20",
             "location": "London",
             "url": "http://www.ucexpo.co.uk"
+        },
+        {
+            "name": "Intel IoT Roadshow",
+            "start_date": "2016-05-14",
+            "end_date": "2016-05-15",
+            "location": "London",
+            "url": "https://iotroadshow.intel.com/home/country/united-kingdom"
         }
     ]
 }
