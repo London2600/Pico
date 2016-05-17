@@ -190,6 +190,13 @@
             "end_date": "2016-05-15",
             "location": "London",
             "url": "https://iotroadshow.intel.com/home/country/united-kingdom"
+        },
+        {
+            "name": "SteelCon",
+            "start_date": "2016-07-15",
+            "end_date": "2016-07-17",
+            "location": "Sheffield",
+            "url": "https://www.steelcon.info/"
         }
     ]
 }
