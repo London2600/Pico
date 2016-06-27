@@ -197,6 +197,12 @@
             "end_date": "2016-07-17",
             "location": "Sheffield",
             "url": "https://www.steelcon.info/"
+        },
+        {
+            "name": "Buzz the Fuzz",
+            "start_date": "2016-07-24",
+            "location": "Lewisham",
+            "url": "https://twitter.com/mpslewisham/status/732197912957059073"
         }
     ]
 }
