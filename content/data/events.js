@@ -203,6 +203,25 @@
             "start_date": "2016-07-24",
             "location": "Lewisham",
             "url": "https://twitter.com/mpslewisham/status/732197912957059073"
+        },
+        {
+            "name": "Misco Expo",
+            "start_date": "2016-09-23",
+            "location": "London",
+            "url": "http://www.misco.co.uk/expo"
+        },
+        {
+            "name": "eCommerce Expo",
+            "start_date": "2016-09-28",
+            "end_date": "2016-09-29",
+            "location": "London",
+            "url": "http://www.ecommerceexpo.co.uk/"
+        },
+        {
+            "name": "Retro Gaming Yacht Party",
+            "start_date": "2016-08-26",
+            "location": "London",
+            "url": "https://www.designmynight.com/london/whats-on/boat-party/retro-gaming-vs-silent-disco-the-mega-yacht-party"
         }
     ]
 }
