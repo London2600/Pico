@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{ meta.title }} - {{ site_title }}</title>
+<meta name="description" content="{{ meta.description }}">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600">
+<link rel="stylesheet" href="{{ theme_url }}/main.css">
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<header>
+<div id="nextmeet">Next meet: <span>first Friday of the month</span></div>
+<a href="/">
+<pre> _______   ______  _______  _______     _        _______  _        ______   _______  _       
+/ ___   ) / ____ \(  __   )(  __   )   ( \      (  ___  )( (    /|(  __  \ (  ___  )( (    /|
+\/   )  |( (    \/| (  )  || (  )  |   | (      | (   ) ||  \  ( || (  \  )| (   ) ||  \  ( |
+    /   )| (____  | | /   || | /   |   | |      | |   | ||   \ | || |   ) || |   | ||   \ | |
+  _/   / |  ___ \ | (/ /) || (/ /) |   | |      | |   | || (\ \) || |   | || |   | || (\ \) |
+ /   _/  | (   ) )|   / | ||   / | |   | |      | |   | || | \   || |   ) || |   | || | \   |
+(   (__/\( (___) )|  (__) ||  (__) | _ | (____/\| (___) || )  \  || (__/  )| (___) || )  \  |
+\_______/ \_____/ (_______)(_______)(_)(_______/(_______)|/    )_)(______/ (_______)|/    )_)</pre>
+</a>
+</header>
+<div id="container"><div class="content">
+    <h1>{{ meta.title }}</h1>
+    {{ content }}
+    <div id="events"></div>
+</div></div>
+<footer><div>
+    <div>
+        <h3>Come meet us</h3>
+        <ul>
+            <li>First Friday of every month</li>
+            <li>Start at 6:30 at the Trocadero front entrance, on Coventry Street</li>
+            <li>Move on elsewhere at 7:30</li>
+        </ul>
+    </div>
+    <div>
+        <h3>Contact us</h3>
+        <ul>
+            <li><a href="https://lists.kentgeek.org/mailman/listinfo/london2600">Join the mailing list</a></li>
+            <li><a href="ircs://irc.2600.london:6697/%232600">irc.2600.london #2600</a> port 6697 for SSL</li>
+            <li><a href="http://www.2600.org">The 2600 Mothership</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Other bollocks</h3>
+        <p>
+        <a class="cc-image" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </p>
+        <p>
+        Powered by <a href="http://picocms.org">picocms</a> and <a href="https://github.com/london2600/website">malice</a>
+        </p>
+    </div>
+</div></footer>
+<script src="/content/scripts/site.js"></script>
+<script>
+$(function () {
+    $.getJSON('/content/data/events.js', function (data) {
+        var markup = '';
+        var dateNow = new Date();
+        dateNow.setHours(0, 0, 0, 0);
+        data.events.sort(function (a, b) { return a.start_date.localeCompare(b.start_date) * -1; });
+        for (var i = 0; i < data.events.length; i ++) {
+            var d = data.events[i];
+            var date = new Date(d.start_date);
+            markup += '<li>' + date.toDateString() + ' - <a href="' + d.url + '">' + d.name + '</a> - <em>' + d.location + '</em></li>';
+        }
+        markup = '<ul>' + markup + '</ul>';
+        $('#events').html(markup);
+    }); 
+});
+</script>
+</body>
+</html>
