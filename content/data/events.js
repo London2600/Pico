@@ -222,7 +222,14 @@
             "start_date": "2016-08-26",
             "location": "London",
             "url": "https://www.designmynight.com/london/whats-on/boat-party/retro-gaming-vs-silent-disco-the-mega-yacht-party"
-        }
+        },
+        {
+            "name": "Chaos Computer Congress",
+            "start_date": "2016-12-27",
+            "end_date": "2016-12-30",
+            "location": "Hamburg",
+            "url": "https://events.ccc.de/congress/2016/wiki/Main_Page"
+        },
     ]
 }
 
