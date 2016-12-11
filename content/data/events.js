@@ -229,7 +229,7 @@
             "end_date": "2016-12-30",
             "location": "Hamburg",
             "url": "https://events.ccc.de/congress/2016/wiki/Main_Page"
-        },
+        }
     ]
 }
 
