@@ -229,6 +229,55 @@
             "end_date": "2016-12-30",
             "location": "Hamburg",
             "url": "https://events.ccc.de/congress/2016/wiki/Main_Page"
+        },
+        {
+            "name": "EAG International Expo",
+            "start_date": "2017-01-17",
+            "end_date": "2017-01-19",
+            "location": "Excel, London",
+            "url": "http://www.eagexpo.com/"
+        },
+        {
+            "name": "BETT",
+            "start_date": "2017-01-25",
+            "end_date": "2017-01-28",
+            "location": "Excel, London",
+            "url": "https://registration.n200.com/survey/0jk0xsbxthmdw?actioncode=WEB1&_ga=1.131031625.710"
+        },
+        {
+            "name": "ICE Totally Gaming",
+            "start_date": "2017-02-07",
+            "end_date": "2017-02-09",
+            "location": "Excel, London",
+            "url": "http://www.icetotallygaming.com/register-your-interest-ice-2017"
+        },
+        {
+            "name": "Security &amp; Counter Terror Expo",
+            "start_date": "2017-05-03",
+            "end_date": "2017-05-04",
+            "location": "Olympia, London",
+            "url": "https://www.counterterrorexpo.com/"
+        },
+        {
+            "name": "Caffe Culture Show"
+            "start_date": "2017-05-23",
+            "end_date": "2017-05-24",
+            "location": "Olympia, London",
+            "url": "http://www.caffecultureshow.com/"
+        },
+        {
+            "name": "Infosecurity Europe"
+            "start_date": "2017-06-06",
+            "end_date": "2017-06-08",
+            "location": "Olympia, London",
+            "url": "http://www.infosecurityeurope.com/"
+        },
+        {
+            "name": "Service Desk Show"
+            "start_date": "2017-06-07",
+            "end_date": "2017-06-08",
+            "location": "Olympia, London",
+            "url": "http://www.servicedeskshow.com/"
         }
     ]
 }
