@@ -259,21 +259,21 @@
             "url": "https://www.counterterrorexpo.com/"
         },
         {
-            "name": "Caffe Culture Show"
+            "name": "Caffe Culture Show",
             "start_date": "2017-05-23",
             "end_date": "2017-05-24",
             "location": "Olympia, London",
             "url": "http://www.caffecultureshow.com/"
         },
         {
-            "name": "Infosecurity Europe"
+            "name": "Infosecurity Europe",
             "start_date": "2017-06-06",
             "end_date": "2017-06-08",
             "location": "Olympia, London",
             "url": "http://www.infosecurityeurope.com/"
         },
         {
-            "name": "Service Desk Show"
+            "name": "Service Desk Show",
             "start_date": "2017-06-07",
             "end_date": "2017-06-08",
             "location": "Olympia, London",
