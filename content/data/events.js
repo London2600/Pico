@@ -278,6 +278,19 @@
             "end_date": "2017-06-08",
             "location": "Olympia, London",
             "url": "http://www.servicedeskshow.com/"
+        },
+        {
+            "name": "Radare2 Workshop",
+            "start_date": "2017-01-18",
+            "location": "London Hackspace",
+            "url": "https://london.hackspace.org.uk/events/"
+        },
+        {
+            "name": "IoT Conference and Expo",
+            "start_date": "2017-01-23",
+            "end_date": "2017-01-24",
+            "location": "Olympia, London",
+            "url": "http://www.iottechexpo.com/europe/"
         }
     ]
 }
