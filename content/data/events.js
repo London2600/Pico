@@ -291,6 +291,46 @@
             "end_date": "2017-01-24",
             "location": "Olympia, London",
             "url": "http://www.iottechexpo.com/europe/"
+        },
+        {
+            "name": "Data Centre Summit",
+            "start_date": "2017-02-08",
+            "location": "Barbican, London",
+            "url": "http://www.datacentresummit.co.uk/"
+        },
+        {
+            "name": "UC Expo",
+            "start_date": "2017-05-17",
+            "end_date": "2017-05-18",
+            "location": "Excel, London",
+            "url": "http://www.ucexpo.co.uk/"
+        },
+        {
+            "name": "Data Centre Summit",
+            "start_date": "2017-06-07",
+            "location": "ILEC Centre, London",
+            "url": "https://www.securitybsides.org.uk/"
+        },
+        {
+            "name": "Facilities Show",
+            "start_date": "2017-06-20",
+            "end_date": "2017-06-22",
+            "location": "Excel, London",
+            "url": "http://www.facilitiesshow.com/"
+        },
+        {
+            "name": "UC Expo",
+            "start_date": "2017-08-04",
+            "end_date": "2017-08-08",
+            "location": "Netherlands",
+            "url": "https://sha2017.org/"
+        },
+        {
+            "name": "World Cybersecurity Congress",
+            "start_date": "2017-03-07",
+            "end_date": "2017-03-08",
+            "location": "London",
+            "url": "http://www.terrapinn.com/conference/world-cyber-security-congress/"
         }
     ]
 }
