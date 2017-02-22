@@ -331,6 +331,26 @@
             "end_date": "2017-03-08",
             "location": "London",
             "url": "http://www.terrapinn.com/conference/world-cyber-security-congress/"
+        },
+        {
+            "name": "Hidden Figures Private Screening",
+            "start_date": "2017-02-24",
+            "location": "Covent Garden Odeon",
+            "url": "https://www.eventbrite.co.uk/e/hidden-figures-private-screening-in-london-women-in-tech-friday-february-24-530pm-tickets-32153758758"
+        },
+        {
+            "name": "Wearable Technolgy Show",
+            "start_date": "2017-03-07",
+            "end_date": "2017-03-08",
+            "location": "Excel, London",
+            "url": "http://www.wearabletechnologyshow.net/home"
+        },
+        {
+            "name": "Smart IoT london",
+            "start_date": "2017-03-15",
+            "end_date": "2017-03-16",
+            "location": "London",
+            "url": "www.smartiotlondon.com"
         }
     ]
 }
