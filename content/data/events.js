@@ -306,7 +306,7 @@
             "url": "http://www.ucexpo.co.uk/"
         },
         {
-            "name": "Data Centre Summit",
+            "name": "B-Sides London",
             "start_date": "2017-06-07",
             "location": "ILEC Centre, London",
             "url": "https://www.securitybsides.org.uk/"
@@ -319,7 +319,7 @@
             "url": "http://www.facilitiesshow.com/"
         },
         {
-            "name": "UC Expo",
+            "name": "SHA2017",
             "start_date": "2017-08-04",
             "end_date": "2017-08-08",
             "location": "Netherlands",
@@ -350,7 +350,7 @@
             "start_date": "2017-03-15",
             "end_date": "2017-03-16",
             "location": "London",
-            "url": "www.smartiotlondon.com"
+            "url": "http://www.smartiotlondon.com"
         }
     ]
 }
