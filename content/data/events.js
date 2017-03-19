@@ -369,6 +369,12 @@
             "start_date": "2017-03-16",
             "location": "London",
             "url": "https://www.meetup.com/Linuxing-In-London/events/237805007/"
+        },
+        {
+            "name": "Arduino Day 2017",
+            "start_date": "2017-04-01",
+            "location": "South London Makerspace",
+            "url": "https://www.meetup.com/LondonArduino/events/238271384/"
         }
     ]
 }
