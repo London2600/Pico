@@ -351,6 +351,24 @@
             "end_date": "2017-03-16",
             "location": "London",
             "url": "http://www.smartiotlondon.com"
+        },
+        {
+            "name": "OpenTech 2017",
+            "start_date": "2017-05-13",
+            "location": "London",
+            "url": "http://www.opentech.org.uk/2017/"
+        },
+        {
+            "name": "OWASP London",
+            "start_date": "2017-03-30",
+            "location": "London",
+            "url": "https://www.owasp.org/index.php/London"
+        },
+        {
+            "name": "Linuxing in London (IoT)",
+            "start_date": "2017-03-16",
+            "location": "London",
+            "url": "https://www.meetup.com/Linuxing-In-London/events/237805007/"
         }
     ]
 }
