@@ -375,6 +375,12 @@
             "start_date": "2017-04-01",
             "location": "South London Makerspace",
             "url": "https://www.meetup.com/LondonArduino/events/238271384/"
+        },
+        {
+            "name": "IoT Cloud Platforms",
+            "start_date": "2017-04-07",
+            "location": "London",
+            "url": "http://www.hardwarepioneers.com/iot-cloud-platforms-connect-collect-analyse"
         }
     ]
 }
