@@ -375,6 +375,18 @@
             "start_date": "2017-04-01",
             "location": "South London Makerspace",
             "url": "https://www.meetup.com/LondonArduino/events/238271384/"
+        },
+        {
+            "name": "IoT Cloud Platforms",
+            "start_date": "2017-04-06",
+            "location": "London",
+            "url": "http://www.hardwarepioneers.com/iot-cloud-platforms-connect-collect-analyse"
+        },
+        {
+            "name": "RoboCop 30th Anniversary Screening",
+            "start_date": "2017-04-01",
+            "location": "London",
+            "url": "https://princecharlescinema.com/PrinceCharlesCinema.dll/WhatsOn?f=1865198"
         }
     ]
 }
