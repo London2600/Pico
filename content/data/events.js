@@ -387,6 +387,12 @@
             "start_date": "2017-04-01",
             "location": "London",
             "url": "https://princecharlescinema.com/PrinceCharlesCinema.dll/WhatsOn?f=1865198"
+        },
+        {
+            "name": "Security and counter-terrorism",
+            "start_date": "2017-05-15",
+            "location": "London",
+            "url": "https://pintofscience.co.uk/event/security-and-counterterrorism"
         }
     ]
 }
