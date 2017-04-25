@@ -393,6 +393,19 @@
             "start_date": "2017-05-15",
             "location": "London",
             "url": "https://pintofscience.co.uk/event/security-and-counterterrorism"
+        },
+        {
+            "name": "Cryptoparty",
+            "start_date": "2017-04-28",
+            "location": "London",
+            "url": "https://www.cryptoparty.in/london"
+        },
+        {
+            "name": "SteelCon",
+            "start_date": "2017-07-07",
+            "end_date": "2017-07-09",
+            "location": "Sheffield",
+            "url": "https://www.steelcon.info/"
         }
     ]
 }
