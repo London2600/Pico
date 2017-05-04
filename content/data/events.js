@@ -406,6 +406,18 @@
             "end_date": "2017-07-09",
             "location": "Sheffield",
             "url": "https://www.steelcon.info/"
+        },
+        {
+            "name": "OWASP London",
+            "start_date": "2017-05-18",
+            "location": "London",
+            "url": "https://www.owasp.org/index.php/London"
+        },
+        {
+            "name": "Inspiring Women in Technology",
+            "start_date": "2017-06-13",
+            "location": "London (WOMEN ONLY)",
+            "url": "https://www.meetup.com/Inspiring-Women-in-Technology/?gj=ej1b"
         }
     ]
 }
