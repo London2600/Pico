@@ -418,6 +418,19 @@
             "start_date": "2017-06-13",
             "location": "London (WOMEN ONLY)",
             "url": "https://www.meetup.com/Inspiring-Women-in-Technology/?gj=ej1b"
+        },
+        {
+            "name": "TechXLR8",
+            "start_date": "2017-06-14",
+            "end_date": "2017-06-15",
+            "location": "Excel, London",
+            "url": "https://tmt.knect365.com/techxlr8/"
+        },
+        {
+            "name": "Terrorism and the Law",
+            "start_date": "2017-05-24",
+            "location": "London",
+            "url": "https://www.eventbrite.co.uk/e/terrorism-the-law-freedom-and-security-in-a-networked-world-seminar-4-do-we-really-need-bulk-powers-tickets-32012373872"
         }
     ]
 }
