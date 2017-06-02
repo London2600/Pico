@@ -21,12 +21,17 @@ Many of us know each other by only the names we choose for ourselves online. As 
 * Metatron
 * no_u
 * misophist
+* DieselDragon
 
 ### Signed (non-attendees)
 * Skyhighatrist (Darren Martyn - [@info_dox](https://twitter.com/info_dox))
 * nsh (Lauri Love, "undoxable hacker god" - [@LauriLove](https://twitter.com/laurilove))
 * Goodkat (Jake Davis - [@doublejake](https://twitter.com/doublejake))
+* Khalil Sehnaoui ([@sehnaoui](https://twitter.com/sehnaoui))
 * Ven ([@V3N44X](https://twitter.com/V3N44X))
+* Tactical Maid ([@tacticalmaid](https://twitter.com/tacticalmaid))
+* Sebastiaan Provost ([@Stekkz](https://twitter.com/Stekkz))
+* 2sec4u ([@2sec4u](https://twitter.com/2sec4u))
 
 ### Obligatory disclaimer
 This post represents only the views of those listed in no particular order above. If you wish to be listed above, the first test is knowing who to ask!
