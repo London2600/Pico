@@ -431,6 +431,54 @@
             "start_date": "2017-05-24",
             "location": "London",
             "url": "https://www.eventbrite.co.uk/e/terrorism-the-law-freedom-and-security-in-a-networked-world-seminar-4-do-we-really-need-bulk-powers-tickets-32012373872"
+        },
+        {
+            "name": "DEFCON 25",
+            "start_date": "2017-07-27",
+            "end_date": "2017-07-30",
+            "location": "Las Vegas, US",
+            "url": "https://www.defcon.org/html/defcon-25/dc-25-index.html"
+        },
+        {
+            "name": "eCommerce Expo",
+            "start_date": "2017-09-27",
+            "end_date": "2017-09-28",
+            "location": "Olympia, London",
+            "url": "http://www.ecommerceexpo.co.uk/"
+        },
+        {
+            "name": "Technology for Marketing",
+            "start_date": "2017-09-27",
+            "end_date": "2017-09-28",
+            "location": "Olympia, London",
+            "url": "http://www.technologyformarketing.co.uk/"
+        },
+        {
+            "name": "IP Expo Europe",
+            "start_date": "2017-10-04",
+            "end_date": "2017-10-06",
+            "location": "Excel, London",
+            "url": "http://www.ipexpoeurope.com/"
+        },
+        {
+            "name": "Misco Expo",
+            "start_date": "2017-10-12",
+            "location": "London",
+            "url": "http://www.misco.co.uk/expo"
+        },
+        {
+            "name": "44CON",
+            "start_date": "2017-09-13",
+            "end_date": "2017-09-15",
+            "location": "ILEC Centre, London",
+            "url": "https://44con.com/"
+        },
+        {
+            "name": "BruCON",
+            "start_date": "2017-10-02",
+            "end_date": "2017-10-03",
+            "location": "Ghent, Belgium",
+            "url": "http://2017.brucon.org/index.php/Main_Page"
         }
     ]
 }
