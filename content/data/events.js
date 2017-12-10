@@ -479,6 +479,78 @@
             "end_date": "2017-10-03",
             "location": "Ghent, Belgium",
             "url": "http://2017.brucon.org/index.php/Main_Page"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-01-20",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-02-17",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-03-17",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-04-21",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-05-19",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-06-16",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-07-21",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-08-25",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-09-22",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-10-20",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-11-17",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London Mid-month",
+            "start_date": "2018-12-15",
+            "location": "London",
+            "url": "https://2600.london"
         }
     ]
 }
