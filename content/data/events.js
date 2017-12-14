@@ -551,6 +551,156 @@
             "start_date": "2018-12-15",
             "location": "London",
             "url": "https://2600.london"
+        },
+        
+        {
+            "name": "2600 London",
+            "start_date": "2018-01-05",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-02-02",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-03-02",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-04-06",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-05-04",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-06-01",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-07-06",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-08-03",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-09-07",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-10-05",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-11-02",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        {
+            "name": "2600 London",
+            "start_date": "2018-12-07",
+            "location": "London",
+            "url": "https://2600.london"
+        },
+        
+        {
+            "name": "CCC",
+            "start_date": "2017-12-27",
+            "end_date": "2017-12-30",
+            "location": "Leipzig, Germany",
+            "url": "https://events.ccc.de/congress/2017/wiki/index.php/Main_Page"
+        },
+        {
+            "name": "EAG International Expo",
+            "start_date": "2018-01-16",
+            "end_date": "2018-01-18",
+            "location": "Excel, London",
+            "url": "http://www.eagexpo.com/"
+        },
+        {
+            "name": "BETT Show",
+            "start_date": "2018-01-24",
+            "end_date": "2018-01-27",
+            "location": "Excel, London",
+            "url": "https://www.bettshow.com/"
+        },
+        {
+            "name": "Hack:SOHO",
+            "start_date": "2018-01-25",
+            "location": "London",
+            "url": "https://www.meetup.com/IOActives-HACK-SOHO/"
+        },
+        {
+            "name": "ICE Totally Gaming",
+            "start_date": "2018-02-06",
+            "end_date": "2018-02-08",
+            "location": "Excel, London",
+            "url": "https://www.icetotallygaming.com/"
+        },
+        {
+            "name": "Infosecurity Europe",
+            "start_date": "2018-06-05",
+            "end_date": "2018-06-07",
+            "location": "Olympia, London",
+            "url": "http://www.infosecurityeurope.com/"
+        },
+        {
+            "name": "DEF CON 26",
+            "start_date": "2018-08-09",
+            "end_date": "2018-08-12",
+            "location": "Las Vegas, US",
+            "url": "https://www.defcon.org/"
+        },
+        {
+            "name": "HOPE",
+            "start_date": "2018-07-20",
+            "end_date": "2018-07-22",
+            "location": "New York, US",
+            "url": "https://hope.net/"
+        },
+        {
+            "name": "Black Hat US",
+            "start_date": "2018-08-04",
+            "end_date": "2018-08-09",
+            "location": "Las Vegas, US",
+            "url": "http://www.blackhat.com/"
+        },
+        {
+            "name": "EMF Camp",
+            "start_date": "2018-08-31",
+            "end_date": "2018-09-02",
+            "location": "UK",
+            "url": "https://www.emfcamp.org/"
+        },
+        {
+            "name": "IP Expo Europe",
+            "start_date": "2018-10-03",
+            "end_date": "2018-10-04",
+            "location": "Excel, London",
+            "url": "http://www.ipexpoeurope.com/"
         }
     ]
 }
